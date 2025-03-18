@@ -1,61 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta tags for character encoding and responsiveness -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visit Edinburgh</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
+  <!-- Link to your custom CSS for styling -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS for responsive components -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Full-width Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
+      <!-- Brand name linking to Home page -->
       <a class="navbar-brand" href="index.html">Edinburgh</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <!-- Toggler for responsive navigation -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Collapsible navigation links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
-          <li class="nav-item"><a class="nav-link active" href="visit.html">Visit</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="history.html">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="visit.html">Visit</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <!-- Visit Content with 7:5 Grid Layout -->
+  
+  <!-- Visit Page Content -->
   <div class="container my-4">
     <div class="row">
-      <!-- Main Content (7 columns) -->
+      <!-- Main Content Column (7/12) -->
       <div class="col-md-7">
-        <h1>Top Attractions in Edinburgh</h1>
-        <p>Experience the best of Edinburgh, from historic sites to vibrant cultural events.</p>
-        <!-- Example: Bootstrap card widget -->
-        <div class="card mb-3">
+        <h1 class="mb-4">Top Places to Visit in Edinburgh</h1>
+        <p>
+          Discover the rich culture and history of Edinburgh through its iconic landmarks and unforgettable experiences.
+          Explore ancient fortresses, stroll historic streets, and immerse yourself in Scotland’s vibrant atmosphere.
+        </p>
+        
+        <!-- Card for Edinburgh Castle -->
+        <div class="card mb-4 shadow-sm">
+          <img src="images/castle.webp" class="card-img-top" alt="Edinburgh Castle">
           <div class="card-body">
             <h5 class="card-title">Edinburgh Castle</h5>
-            <p class="card-text">A historic fortress offering stunning views of the city.</p>
+            <p class="card-text">Perched atop Castle Rock, Edinburgh Castle offers sweeping views, storied halls, and a deep dive into Scotland’s regal history.</p>
+            <a href="https://www.edinburghcastle.scot" target="_blank" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        
+        <!-- Card for The Royal Mile -->
+        <div class="card mb-4 shadow-sm">
+          <img src="images/royal.webp" class="card-img-top" alt="The Royal Mile">
+          <div class="card-body">
+            <h5 class="card-title">The Royal Mile</h5>
+            <p class="card-text">This historic stretch connects the castle with Holyrood Palace and is lined with fascinating shops, historic landmarks, and vibrant street performances.</p>
+            <a href="https://www.visitscotland.com" target="_blank" class="btn btn-primary">Discover More</a>
+          </div>
+        </div>
+        
+        <!-- Card for Arthur's Seat -->
+        <div class="card mb-4 shadow-sm">
+          <img src="images/arthur.jpg" class="card-img-top" alt="Arthur's Seat">
+          <div class="card-body">
+            <h5 class="card-title">Arthur's Seat</h5>
+            <p class="card-text">A majestic ancient volcano that offers a rewarding hike and panoramic views of Edinburgh’s skyline – a haven for nature lovers.</p>
+            <a href="https://www.nationaltrust.org.uk" target="_blank" class="btn btn-primary">Explore More</a>
+          </div>
+        </div>
+        
+        <!-- Card for National Museum of Scotland -->
+        <div class="card mb-4 shadow-sm">
+          <img src="images/national.webp" class="card-img-top" alt="National Museum of Scotland">
+          <div class="card-body">
+            <h5 class="card-title">National Museum of Scotland</h5>
+            <p class="card-text">Uncover Scotland’s rich history and diverse culture through engaging exhibits and interactive displays that captivate all ages.</p>
+            <a href="https://www.nms.ac.uk" target="_blank" class="btn btn-primary">Visit Museum</a>
           </div>
         </div>
       </div>
-      <!-- Sidebar (5 columns) -->
+      
+      <!-- Sidebar Column (5/12) -->
       <div class="col-md-5">
-        <h2>Experience Highlights</h2>
-        <p>Discover curated experiences that capture the essence of Edinburgh.</p>
+        <h2 class="mb-4">Essential Experiences</h2>
+        <ul class="list-group mb-4">
+          <li class="list-group-item">Savor traditional Scottish dishes at local pubs and restaurants.</li>
+          <li class="list-group-item">Wander through the charming streets of the Grassmarket area.</li>
+          <li class="list-group-item">Join a ghost tour to explore Edinburgh's mysterious past.</li>
+          <li class="list-group-item">Relax in the serene Princes Street Gardens.</li>
+          <li class="list-group-item">Experience live music and cultural festivals throughout the year.</li>
+        </ul>
+        
+        <!-- Quick Tip Widget -->
+        <div class="card shadow-sm">
+          <div class="card-header">
+            Quick Tip
+          </div>
+          <div class="card-body">
+            <p class="card-text">For an unforgettable adventure, consider booking a guided tour to discover hidden gems and local secrets of Edinburgh.</p>
+            <a href="https://www.timeout.com/edinburgh" target="_blank" class="btn btn-secondary">More Tips</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="text-center py-4">
-    <p>&copy; 2025 Edinburgh Tourist Association</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
+  
+  <!-- Bootstrap JavaScript Bundle (for navbar functionality) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
