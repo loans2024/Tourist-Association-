@@ -3,3 +3,17 @@ body {
     font-family: Arial, sans-serif;
   }
   
+/* Apply Playfair Display to all headings */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Optionally make highlighted titles bolder */
+  h1 {
+    font-weight: 700; /* Bold for main titles */
+  }
+  
+  h2 {
+    font-weight: 600;
+  }
+  

@@ -4,18 +4,46 @@
   <!-- Meta tags to set character encoding and viewport for responsive design -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edinburgh Tourist Association</title>
+  <title>Qatar Tourism Association</title>
+
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
   <!-- Link to Bootstrap CSS for pre-built responsive design components -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
   <!-- Link to your custom CSS file for additional styling -->
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Apply Playfair Display to headings and navbar */
+    h1, h2, h3, .navbar-brand, .navbar-nav .nav-link {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Make main title bold */
+    h1 {
+      font-weight: 700;
+    }
+
+    /* Give h2 titles a slightly lighter weight */
+    h2 {
+      font-weight: 600;
+    }
+
+    /* Apply Poppins to all body text */
+    body, p, a, li, button {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation bar: Provides links to different sections of the website -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <!-- Brand name acting as a link to the home page -->
-      <a class="navbar-brand" href="index.html">Edinburgh</a>
+      <a class="navbar-brand" href="index.html">Qatar</a>
       <!-- Button for toggling the navigation menu on small screens -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -41,53 +69,42 @@
   </nav>
 
   <!-- Banner Section: Displays a large, welcoming header -->
-  <header class="bg-primary text-white text-center py-5">
+  <header class="bg-dark text-white text-center py-5">
     <!-- Main title displayed in the banner -->
-    <h1>Welcome to Edinburgh</h1>
+    <h1>Welcome to Qatar</h1>
     <!-- Subtitle that briefly describes what visitors can expect -->
-    <p>Discover the charm and history of our beautiful city.</p>
+    <p>Experience the culture, history, and modern marvels of Qatar.</p>
   </header>
 
-  <!-- General Information Section: Provides an overview of Edinburgh -->
+  <!-- General Information Section: Provides an overview of Qatar -->
   <section class="container my-4">
-    <h2>About Edinburgh</h2>
-    <!-- First paragraph describing Edinburgh's reputation and features -->
+    <h2>About Qatar</h2>
+    <!-- First paragraph describing Qatar's reputation and features -->
     <p>
-      Edinburgh, the capital city of Scotland, is renowned for its rich history, stunning architecture, 
-      and vibrant cultural scene. From the iconic Edinburgh Castle to the world-famous festivals, this city 
-      offers an inspiring blend of tradition and modernity.
+      Qatar, a dynamic and modern country in the Middle East, is known for its rich cultural heritage, breathtaking skyline, 
+      and world-class attractions. From the historic Souq Waqif to the futuristic cityscape of Doha, Qatar offers a perfect 
+      blend of tradition and innovation.
     </p>
     <!-- Second paragraph offering additional context and inviting exploration -->
     <p>
-      Explore ancient cobbled streets, visit world-class museums, and enjoy scenic views that capture the 
-      essence of Scottish heritage. Whether you're here for history, art, or leisure, Edinburgh has something 
-      for everyone.
+      Discover vast deserts, explore renowned museums, and experience authentic Arabian hospitality. Whether you're here 
+      for adventure, history, or luxury, Qatar has something special for everyone.
     </p>
     <!-- Button that redirects the user to the History page for more detailed historical information -->
     <a href="history.html" class="btn btn-secondary">
-      Explore Edinburgh's History
+      Explore Qatar's History
     </a>
-    <!-- 
-      The button above uses Bootstrap's "btn" and "btn-secondary" classes for styling.
-      It links directly to the "history.html" page when clicked.
-      Detailed comments are provided to enhance clarity and maintainability of the code.
-    -->
   </section>
 
-  <!-- Static Map Section: Embeds an interactive OpenStreetMap showing Edinburgh's location -->
+  <!-- Static Map Section: Embeds an interactive OpenStreetMap showing Qatar's location -->
   <section class="container my-4">
     <h2>Our Location</h2>
-    <!-- 
-      The iframe below embeds a map from OpenStreetMap.
-      The map is configured with specific coordinates and dimensions, and it includes a marker.
-    -->
     <iframe width="100%" height="450" frameborder="0" scrolling="no"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=-3.203125%2C55.885999%2C-3.080444%2C55.957902&amp;layer=mapnik&amp;marker=55.921945,-3.141784"
-      style="border: 1px solid black"></iframe>
+      src="https://www.openstreetmap.org/export/embed.html?bbox=50.73339843750001%2C24.470125593818822%2C51.7333984375%2C25.470125593818822&amp;layer=mapnik&amp;marker=25.027%2C51.520">
+    </iframe>
     <br/>
-    <!-- Link to view a larger version of the embedded map -->
     <small>
-      <a href="https://www.openstreetmap.org/?mlat=55.921945&amp;mlon=-3.141784#map=12/55.921945/-3.141784">
+      <a href="https://www.openstreetmap.org/?mlat=25.027&amp;mlon=51.520#map=10/25.027/51.520">
         View Larger Map
       </a>
     </small>
@@ -95,11 +112,12 @@
 
   <!-- Footer Section: Displays copyright and other footer information -->
   <footer class="text-center py-4">
-    <p>&copy; 2025 Edinburgh Tourist Association</p>
+    <p>&copy; 2025 Qatar Tourism Association</p>
   </footer>
 
   <!-- Link to Bootstrap JavaScript bundle for interactive components like the navbar toggle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
